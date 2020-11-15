@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"develop":"cd web && npm run develop",
-	"build":"cd web && npm run build"
+    "develop": "cd web && npm run develop",
+    "build": "cd web && npm run build",
+    "build-lerna":"lerna bootstrap && (cd web && npm run build)"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/klincode/gatsbyAndSanity/issues"
   },
-  "homepage": "https://github.com/klincode/gatsbyAndSanity#readme"
+  "homepage": "https://github.com/klincode/gatsbyAndSanity#readme",
+  "dependencies": {
+    "lerna": "^3.22.1"
+  }
 }
