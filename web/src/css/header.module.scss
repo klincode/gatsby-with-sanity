@@ -13,7 +13,7 @@ header {
     width: 100%;
     z-index: -999;
     height: 150vh;
-    animation: ide 5s ease-out 1s 1 none
+    animation: ide 50s ease-out infinite;
   }
 
   .topLinks {
@@ -64,14 +64,14 @@ header {
             display: block;
             width: 110px;
             max-height: 40px;
-            // margin: 10px;
-            padding: 20px 30px 20px 0;
+
+            padding: 20px;
 
 
             img {
               max-width: 100%;
               height: auto;
-              ;
+              margin: 0 auto;
             }
           }
 
@@ -192,10 +192,19 @@ header {
 @media (max-width:780px) {
   header {
     .headerImage {
-      right: -50%;
-      top: -100%;
-      width: 100%;
-      z-index: -999;
+      display: none;
+    }
+
+    .topLinks {
+      .buttonTransparent {
+        color: var(--primaryTextColor);
+        border: 2px solid var(--primaryTextColor);
+        padding: 5px 15px;
+        border-radius: 100px;
+        font-weight: 700;
+        z-index: 100;
+
+      }
     }
 
     .content {
@@ -203,10 +212,15 @@ header {
       .left {
         width: 100%;
         text-align: center;
-        padding: 0 10%;
+
+        h1 {
+          padding: 0;
+          margin: 100px auto;
+          ;
+        }
 
         .companyLinks {
-          margin: 0 auto;
+          margin: 100px auto 50px;
 
           .items {
             justify-content: center;
@@ -219,5 +233,32 @@ header {
       }
     }
 
+  }
+}
+
+
+@media (max-width:1024px) {
+  header {
+    .headerImage {
+      display: none;
+    }
+
+    .topLinks {
+      display: none;
+    }
+  }
+}
+
+@media (max-width:400px) {
+  header {
+    .content {
+      .left {
+        h1 {
+          padding: 0;
+          margin: 30px auto 50px;
+
+        }
+      }
+    }
   }
 }

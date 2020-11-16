@@ -13,7 +13,7 @@
       ol {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        // justify-content: flex-start;
         list-style-type: decimal;
         padding-inline-start: 0px;
 
@@ -26,9 +26,9 @@
           ;
 
           img {
-            flex-basis: 20%;
-            max-width: 60px;
-            height: 60px;
+            flex-basis: 21%;
+            width: 150px;
+            // height: 70px;
           }
 
           .employeeData {
@@ -76,19 +76,32 @@
         ol {
           justify-content: center;
           margin: 0 auto;
-
           width: 50%;
 
           li {
-            width: 80%;
+            width: 70%;
+            margin: 20px auto;
+            justify-content: center;
           }
 
           .employeeData {
             text-align: left;
             margin-left: 50px;
+            // justify-content: flex-end;
+            align-items: center;
+            // flex-basis: 100%;
           }
         }
       }
+    }
+  }
+}
+
+
+@media (max-width:720px) {
+  .content {
+    .right {
+      display: none;
     }
   }
 }

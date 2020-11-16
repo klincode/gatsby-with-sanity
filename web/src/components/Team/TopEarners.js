@@ -11,28 +11,28 @@ const TopEarners = () => {
       <h3>Top Earners</h3>
       <h4>Ranking</h4>
       <ol>
-        <li>1.
+        <li>
           <img src={employee_1} alt="Employee" />
           <div className={styles.employeeData}>
             <span className={styles.employee}>Janusz Kowalski</span>
             <span className={styles.sallary}>$1093.45</span>
           </div>
         </li>
-        <li>2.
+        <li>
           <img src={employee_2} alt="Employee" />
           <div className={styles.employeeData}>
             <span className={styles.employee}>Tadeusz Kowalski</span>
             <span className={styles.sallary}>$5093.45</span>
           </div>
         </li>
-        <li>3.
+        <li>
           <img src={employee_3} alt="Employee" />
           <div className={styles.employeeData}>
             <span className={styles.employee}>Jonathan Davis</span>
             <span className={styles.sallary}>$2093.45</span>
           </div>
         </li>
-        <li>4.
+        <li>
           <img src={employee_4} alt="Employee" />
           <div className={styles.employeeData}>
             <span className={styles.employee}>Brian Davis</span>

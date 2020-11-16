@@ -1,4 +1,6 @@
 .features {
+  margin-top: 50px;
+  ;
 
   .items {
     display: flex;
@@ -15,6 +17,9 @@
 
 @media (max-width:720px) {
   .features {
+    margin-top: 0;
+
+
     .items {
       width: 100%;
       flex-wrap: wrap;

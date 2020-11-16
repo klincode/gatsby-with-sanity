@@ -19,7 +19,7 @@
     flex-basis: 18%;
     padding: 10px 50px;
     margin: 10px;
-    min-height: 450px;
+    min-height: 350px;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: space-between;
@@ -42,8 +42,8 @@
 
       img {
         flex-basis: 20%;
-        width: 40px;
-        height: 50px;
+        width: 70px;
+        // height: 50px;
         padding: 10px;
       }
 
@@ -79,11 +79,13 @@
     flex-wrap: wrap;
 
     .item {
+      flex-basis: 65%;
+
       div:first-child {
         margin: 0 auto;
       }
 
-      flex-basis: 40%;
+      // flex-basis: 40%;
       min-height: 400px;
       text-align: center;
       margin: 20px 10px;
@@ -91,6 +93,15 @@
       .author {
         margin-bottom: 50px;
       }
+    }
+  }
+}
+
+@media (max-width:720px) {
+  .references {
+    .item {
+      flex-basis: 100%;
+      padding: 10px;
     }
   }
 }

@@ -15,12 +15,12 @@ const Companies = () => {
     <div className={styles.companyLinks}>
       <ul className={styles.items}>
         <li><a href="#"><img src={company_1} alt="" /></a></li>
-        <li><a href="#"><img src={company_2} alt="" /></a></li>
+        {/* <li><a href="#"><img src={company_2} alt="" /></a></li> */}
         <li><a href="#"><img src={company_3} alt="" /></a></li>
         <li><a href="#"><img src={company_4} alt="" /></a></li>
         <li><a href="#"><img src={company_5} alt="" /></a></li>
         <li><a href="#"><img src={company_6} alt="" /></a></li>
-        <li><a href="#"><img src={company_7} alt="" /></a></li>
+        {/* <li><a href="#"><img src={company_7} alt="" /></a></li> */}
         <li><a href="#"><img src={company_8} alt="" /></a></li>
         <li><a href="#"><img src={company_9} alt="" /></a></li>
       </ul>    </div>
