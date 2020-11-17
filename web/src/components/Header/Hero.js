@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../../css/header.module.scss';
-import companyLinks from '../../assets/company-links.png'
 import Cards from './Cards'
 import headerImg from '../../assets/baner_element.png';
 import Form from '../Contact/Form'
@@ -11,7 +10,7 @@ const Hero = () => {
       <img className={styles.headerImage} src={headerImg} alt="" />
       <div className="container">
         <div className={styles.topLinks}>
-          <a href="#" className={styles.logo}>Lorem, ipsum dolor.</a>
+          <a href="http://www.klincode.pl" className={styles.logo}>www.klincode.pl</a>
           <a href="#" className={styles.buttonTransparent}>Try for free</a>
         </div>
 

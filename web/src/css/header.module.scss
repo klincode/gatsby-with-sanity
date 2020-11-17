@@ -89,6 +89,7 @@ header {
         flex-direction: column;
         position: relative;
 
+
         .card {
           box-shadow: 12px 14px 44px 0px rgba(0, 0, 0, 0.62);
           background-color: #fff;
@@ -96,6 +97,9 @@ header {
           position: absolute;
           backface-visibility: hidden;
           min-width: 210px;
+          transition: transform 3s;
+          opacity: 0;
+
         }
 
         img {
@@ -106,6 +110,9 @@ header {
           z-index: 20;
           top: 0;
           right: 20%;
+          transform: translateY(-350%);
+          animation: cardDown 2s 0.9s ease forwards;
+          animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
         }
 
         .card:nth-child(2) {
@@ -113,41 +120,39 @@ header {
           right: 0;
           width: 100%;
           z-index: 10;
-          transform: rotate(4deg);
+          transform: translateY(-350%);
           min-width: 450px;
+          animation: cardDown 2s 0.5s ease forwards, cardRotate1 2s 0.5s ease forwards;
+          animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
         }
 
         .card:nth-child(3) {
+
           top: 250px;
           right: 40%;
           width: 50%;
           z-index: 5;
-          transform: rotate(-15deg);
+          transform: translateY(-350%);
+          ;
+          animation: cardDown 2s 1s ease forwards, cardRotate2 2s 1s ease forwards;
+          animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 
         }
 
         .card:nth-child(4) {
+          transform: translateY(-350%);
           top: 250px;
           right: 0%;
           width: 50%;
           z-index: 5;
-
+          animation: cardDown 2s 1.5s ease forwards;
+          animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
         }
       }
     }
 
   }
 
-}
-
-@keyframes ide {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 
@@ -245,8 +250,6 @@ header {
   }
 }
 
-
-
 @media (max-width:400px) {
   header {
     .headerImage {
@@ -283,5 +286,59 @@ header {
         }
       }
     }
+  }
+}
+
+@keyframes cardDown {
+
+  0% {
+    transform: translateY(-200%);
+  }
+
+  40% {
+    opacity: 0.9
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0.98
+  }
+}
+
+@keyframes cardRotate1 {
+
+  0% {
+    transform: translateY(-200%) rotate(0)
+  }
+
+  10% {}
+
+  100% {
+    transform: translateY(0) rotate(-4deg);
+
+  }
+}
+
+@keyframes cardRotate2 {
+
+  0% {
+    transform: translateY(-350%) rotate(0)
+  }
+
+  10% {}
+
+  100% {
+    transform: translateY(0) rotate(15deg);
+
+  }
+}
+
+@keyframes ide {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
