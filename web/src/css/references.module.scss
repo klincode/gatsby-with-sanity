@@ -31,6 +31,7 @@
 
     .star {
       padding-right: 7px;
+      margin-top: 20px;
     }
 
     .author {
@@ -55,11 +56,13 @@
 
         h3 {
           margin: 10px 0;
+
         }
 
         p {
           margin: 0;
           color: var(--primaryTextColor);
+          text-align: center;
 
           span {
             color: var(--secondaryTextColor);
@@ -102,6 +105,19 @@
     .item {
       flex-basis: 100%;
       padding: 10px;
+
+    }
+  }
+}
+
+@media (max-width:400px) {
+  .references {
+    .item {
+      .author {
+        flex-direction: column;
+
+      }
+
     }
   }
 }

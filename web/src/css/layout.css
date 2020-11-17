@@ -184,6 +184,9 @@ form {
 }
 
 @media (max-width:780px) {
+  section {
+    padding: 10px 20px;
+  }
 
   h1,
   h2 {
@@ -195,9 +198,9 @@ form {
   }
 
   form {
-    margin: 20px 0;
+    margin: 20px auto;
     min-width: 300px;
-    width: 100%;
+    width: 80%;
   }
 
   form>* {
@@ -217,6 +220,18 @@ form {
 
   ::placeholder {
     color: var(--secondaryTextColor);
-    padding: 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:400px) {
+
+
+  ::placeholder {
+    text-align: center;
+    font-size: 0.8rem;
+
+    color: var(--secondaryTextColor);
+    padding: 0 20px;
   }
 }

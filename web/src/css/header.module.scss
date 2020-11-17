@@ -192,13 +192,16 @@ header {
 @media (max-width:780px) {
   header {
     .headerImage {
-      display: none;
+      right: -75%;
+      top: -55%;
+      width: 100%;
+      z-index: -999;
+      height: 100vh;
     }
 
     .topLinks {
       .buttonTransparent {
-        color: var(--primaryTextColor);
-        border: 2px solid var(--primaryTextColor);
+
         padding: 5px 15px;
         border-radius: 100px;
         font-weight: 700;
@@ -220,10 +223,16 @@ header {
         }
 
         .companyLinks {
-          margin: 100px auto 50px;
+          margin: 50px auto 0px;
+          width: 90%;
 
           .items {
             justify-content: center;
+
+            li {
+              width: 90px;
+              padding: 10px;
+            }
           }
         }
       }
@@ -237,7 +246,8 @@ header {
 }
 
 
-@media (max-width:1024px) {
+
+@media (max-width:400px) {
   header {
     .headerImage {
       display: none;
@@ -246,17 +256,30 @@ header {
     .topLinks {
       display: none;
     }
-  }
-}
 
-@media (max-width:400px) {
-  header {
     .content {
       .left {
         h1 {
           padding: 0;
-          margin: 30px auto 50px;
+          margin: 0px auto 0px;
 
+        }
+
+        .companyLinks {
+          margin: 0px auto 50px;
+          width: 100%;
+
+          .items {
+
+            li {
+              width: 80px;
+              padding: 10px;
+            }
+          }
+
+          .items {
+            justify-content: center;
+          }
         }
       }
     }
