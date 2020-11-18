@@ -4,7 +4,7 @@ import employee_1 from '../../assets/top_earner_1.png'
 import employee_2 from '../../assets/top_earner_2.png'
 import employee_3 from '../../assets/top_earner_3.png'
 import employee_4 from '../../assets/top_earner_4.png'
-
+import Bounce from 'react-reveal/Bounce';
 const TopEarners = () => {
   return (
     <div className={styles.employees}>
@@ -12,28 +12,36 @@ const TopEarners = () => {
       <h4>Ranking</h4>
       <ol>
         <li>
-          <img src={employee_1} alt="Employee" />
+          <Bounce>
+            <img src={employee_1} alt="Employee" />
+          </Bounce>
           <div className={styles.employeeData}>
             <span className={styles.employee}>Janusz Kowalski</span>
             <span className={styles.sallary}>$1093.45</span>
           </div>
         </li>
         <li>
-          <img src={employee_2} alt="Employee" />
+          <Bounce>
+            <img src={employee_2} alt="Employee" />
+          </Bounce>
           <div className={styles.employeeData}>
             <span className={styles.employee}>Tadeusz Kowalski</span>
             <span className={styles.sallary}>$5093.45</span>
           </div>
         </li>
         <li>
-          <img src={employee_3} alt="Employee" />
+          <Bounce>
+            <img src={employee_3} alt="Employee" />
+          </Bounce>
           <div className={styles.employeeData}>
             <span className={styles.employee}>Jonathan Davis</span>
             <span className={styles.sallary}>$2093.45</span>
           </div>
         </li>
         <li>
-          <img src={employee_4} alt="Employee" />
+          <Bounce>
+            <img src={employee_4} alt="Employee" />
+          </Bounce>
           <div className={styles.employeeData}>
             <span className={styles.employee}>Brian Davis</span>
             <span className={styles.sallary}>$093.45</span>

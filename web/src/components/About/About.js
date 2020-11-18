@@ -1,20 +1,24 @@
 import React from 'react'
 import styles from '../../css/about.module.scss'
-// import about1 from '../../assets/card_project_rank.png'
 import about1 from '../../assets/about.jpg'
-
 import arrow from '../../assets/arrow.png'
 import backgroundElement from '../../assets/left_decoration.png'
+import Bounce from 'react-reveal/Bounce';
+
 const About = () => {
   return (
     <section>
+
       <img className={styles.backgroundElement} src={backgroundElement} alt="" />
+
       <div className="container">
         <div className={styles.content}>
-          <div className={styles.left}>
-            <img src={about1} alt="Project ranking image" />
-            {/* <img src={about2} alt="Team image" /> */}
-          </div>
+          <Bounce>
+            <div className={styles.left}>
+              <img src={about1} alt="Project ranking image" />
+              {/* <img src={about2} alt="Team image" /> */}
+            </div>
+          </Bounce>
 
           <div className={styles.right}>
             <h2>Lorem ipsum dolor sit amet.</h2>
